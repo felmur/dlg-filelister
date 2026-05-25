@@ -7,7 +7,7 @@
 using namespace std;
 
 string prgname="dlg-filelister";
-string version="1.0a";
+string version="1.1a";
 string copyright="(c) 2026 by Felice Murolo, Salerno - Italia";
 string email="linuxboy@fel.hopto.org";
 

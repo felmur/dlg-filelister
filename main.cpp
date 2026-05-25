@@ -46,6 +46,11 @@ int main(int argc, char *argv[])
     if (pth[pth.length()-1] != '/') pth+='/';
 
     u = pth + trovaFileCaseInsensitive(pth, "file.dat");
+    if (u == "./") {
+        if (argc == 1) Usage();
+        cout << "No 'file.dat' (case insensitive) file in path '" << pth << "'" << endl << endl;
+        return(0);
+    }
 
     if ((f=fopen(u.data(),"r"))){
         memset(&qf,0,sizeof(struct QuickFile));
